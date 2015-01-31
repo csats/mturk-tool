@@ -1,0 +1,26 @@
+<template name="home">
+  <p>
+    AWS Access Key: <input type="text" name="awsAccessKey" id="awsAccessKey" value="{{awsSettingsDoc.awsAccessKey}}" placeholder="enter access key"/>
+  </p>
+  <p>
+    AWS Secret Key: <input type="password" name="awsSecretKey" id="awsSecretKey" value="{{awsSettingsDoc.awsSecretKey}}" placeholder="enter secret key"/>
+  </p>
+  <p>
+    Worker ID: <input type="text" name="workerId" id="workerId" value="{{awsSettingsDoc.workerId}}" placeholder="enter worker ID"/>
+  </p>
+  <p>
+    Qualification Type ID: <input type="text" name="qualificationTypeId" id="qualificationTypeId" value="{{awsSettingsDoc.qualificationTypeId}}" placeholder="enter a qualification type ID"/>
+  </p>
+  <p>
+    Sandbox?
+    <select name="sandbox">
+      <option value="true" {{isSelected true}}>true</option>
+      <option value="false" {{isSelected false}}>false</option>
+    </select>
+  </p>
+  <p>
+    <button class="AssignQualification">Assign Qualification</button>
+    <button class="RevokeQualification">Revoke Qualification</button>
+    <button class="NotifyWorkers">Notify Worker</button>
+  </p>
+</template>
