@@ -1,5 +1,7 @@
 # Meteor Amazon Mechanical Turk Tool
 
+![screenshot of mturk-tool web interface](screenshot.png)
+
 This Meteor app demonstrates:
 
 * assign qualification to worker
